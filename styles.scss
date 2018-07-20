@@ -1,0 +1,39 @@
+@import '~bootstrap/scss/bootstrap-grid.scss';
+@import '~bootstrap/scss/bootstrap.scss';
+
+body {
+    background-color: antiquewhite;
+    font-family: Roboto;
+}
+
+img {
+    width: 100%;
+    max-width: 150px;
+    max-height: 150px;
+    clear: both;
+}
+
+.content {
+    background-color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    align-content: center;
+}
+
+.filesList {
+  background-color: antiquewhite;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.tooltipe:hover::after { 
+    content: attr(data-title); 
+    position: absolute; 
+    left: 10%; 
+    top: 30%; 
+    z-index: 10; 
+    background: rgba(255,255,230,0.9); 
+    padding: 5px 10px;
+    border: 1px solid #333; 
+}
